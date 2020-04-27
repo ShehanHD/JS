@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">JavaScript Control Form</h1>
+
+        <form action="">
+            <div class="input-field col s12 l6">
+                <input type="text" id="first_name" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s12 l6">
+                <input type="text" id="last_name" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="email" id="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="password" id="password" class="validate">
+                <label for="password" data-error="wrong" data-success="right">Password</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="password" id="re_password" class="validate">
+                <label for="re_password" data-error="wrong" data-success="right">Repeat Password</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" id="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+    <s cript src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
