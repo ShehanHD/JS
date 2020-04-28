@@ -14,26 +14,31 @@
     <div class="container">
         <h1 class="center-align">JavaScript Control Form</h1>
 
-        <form action="">
+        <form>
             <div class="input-field col s12 l6">
                 <input type="text" id="first_name" class="validate">
                 <label for="first_name">First Name</label>
+                <span class="err" id="errName"></span>
             </div>
             <div class="input-field col s12 l6">
                 <input type="text" id="last_name" class="validate">
                 <label for="last_name">Last Name</label>
+                <span class="err" id="errLastName"></span>
             </div>
             <div class="input-field col s12">
                 <input type="email" id="email" class="validate">
                 <label for="email" data-error="wrong" data-success="right">Email</label>
+                <span class="err" id="errEmail"></span>
             </div>
             <div class="input-field col s12">
                 <input type="password" id="password" class="validate">
-                <label for="password" data-error="wrong" data-success="right">Password</label>
+                <label for="password">Password</label>
+                <span class="err" id="errPass"></span>
             </div>
             <div class="input-field col s12">
                 <input type="password" id="re_password" class="validate">
-                <label for="re_password" data-error="wrong" data-success="right">Repeat Password</label>
+                <label for="re_password">Repeat Password</label>
+                <span class="err" id="errMatch"></span>
             </div>
             <button class="btn waves-effect waves-light" type="submit" id="submit">Submit
                 <i class="material-icons right">send</i>
@@ -41,6 +46,7 @@
         </form>
     </div>
     <s cript src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./validate.js"></script>
     <script src="./index.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
