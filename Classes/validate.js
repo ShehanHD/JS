@@ -1,4 +1,10 @@
 class ControlForm{
+    path;
+
+    constructor(path) {
+        this.path = path;
+    }
+
     verifyValue = (e, RegEx=/[\s\S]+/) => {
         return RegEx.test(e.target.value);
     }
@@ -7,4 +13,15 @@ class ControlForm{
         return pass1 === e.target.value ? true : false;
     }
 
+    send = () => {
+        $.ajax({
+            type: "method",
+            url: "url",
+            data: "data",
+            dataType: "dataType",
+            success: function (response) {
+                
+            }
+        });
+    }
 }
