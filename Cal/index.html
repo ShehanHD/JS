@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cal container grey lighten-3">
+        <input type="text" id="num" placeholder="0">
+
+        <div class="opp">
+            <a href="#" class="waves-effect indigo white-text waves-light btn" id="add">+</a>
+            <a href="#" class="waves-effect indigo white-text waves-light btn" id="sub">-</a>
+            <a href="#" class="waves-effect indigo white-text waves-light btn" id="mul">*</a>
+            <a href="#" class="waves-effect indigo white-text waves-light btn" id="div">/</a>
+        </div>
+        <div class="numpad">
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="1" onclick="clicked(this.id)">1</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="2" onclick="clicked(this.id)">2</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="3" onclick="clicked(this.id)">3</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="4" onclick="clicked(this.id)">4</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="5" onclick="clicked(this.id)">5</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="6" onclick="clicked(this.id)">6</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="7" onclick="clicked(this.id)">7</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="8" onclick="clicked(this.id)">8</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="9" onclick="clicked(this.id)">9</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" onclick="resetInput()">c</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="0" onclick="clicked(this.id)">0</a>
+            <a href="#" class="waves-effect white grey-text waves-light btn" id="." onclick="clicked(this.id)">.</a>     
+        </div>
+            <a href="#" class=" ris waves-effect green white-text waves-light btn" id="ris">Risultato</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

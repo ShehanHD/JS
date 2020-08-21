@@ -4,8 +4,9 @@ let name;
 let surname;
 let email;
 let password;
-let country;
 
+
+let country;
 $.ajax({
     method: "GET",
     url: "./paesi.json",
@@ -87,8 +88,8 @@ document.getElementById("inCountry").addEventListener('input', function(e){
 })
 
 document.getElementById('submit').addEventListener('click', function (e){
-    e.preventDefault();
-    console.log(email);
+
+    console.log(e);
 })
 
 document.getElementById('first_name').addEventListener('input', function (e){
